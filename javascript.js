@@ -27,4 +27,11 @@ window.addEventListener("load", function load(event) {
       });
     });
   };
+  document.getElementById("Simple").onclick = function() {
+    chrome.tabs.query({"active": true, "lastFocusedWindow": true}, function(tabs) {
+      chrome.tabs.insertCSS(tabs[0].id, {
+        "code": "body,div,button,span { background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; } * { background-color: rgb(255, 255, 255) !important; border-color: rgb(0, 0, 0) !important; border-width: 1px !important; outline-color: rgb(0, 0, 0) !important; } * { color: rgb(0, 0, 0) !important; }"
+      });
+    });
+  };
 });
