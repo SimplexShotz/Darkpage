@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "Darkpage",
   "version": "1.0",
-  "description": "this is a test",
+  "description": "Changes Chrome pages to become dark.",
   "background": {
     "scripts": [
       "background.js"
