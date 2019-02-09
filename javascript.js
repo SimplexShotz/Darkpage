@@ -34,4 +34,11 @@ window.addEventListener("load", function load(event) {
       });
     });
   };
+  document.getElementById("Font").onkeypress = function() {
+    chrome.tabs.query({"active": true, "lastFocusedWindow": true}, function(tabs) {
+      chrome.tabs.insertCSS(tabs[0].id, {
+        "code": "* { font-family: " + document.getElementById("Font").value + " }"
+      });
+    });
+  };
 });
