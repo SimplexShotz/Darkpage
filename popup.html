@@ -2,6 +2,9 @@
 <html>
   <head>
     <style>
+      * {
+        font-family: Helvetica;
+      }
       body {
         background-color: rgb(25, 25, 25);
       }
@@ -35,6 +38,12 @@
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
       }
+      #Font {
+        width: 80px;
+        resize: none;
+        padding: 10px;
+        margin: 10px;
+      }
     </style>
     <script src="javascript.js"></script>
   </head>
@@ -44,5 +53,6 @@
     <button id="Night">Night</button>
     <button id="Sky">Sky</button>
     <button id="Simple">Simple</button>
+    <textarea id="Font" placeholder="Font" rows="1"></textarea>
   </body>
 </html>
