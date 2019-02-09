@@ -1,4 +1,5 @@
 // window.addEventListener("load", function load(event) {
+if (false) {
 chrome.tabs.onUpdated.addListener(function() {
   // document.getElementById("test").onclick = function() {
     chrome.tabs.query({"active": true, "lastFocusedWindow": true}, function(tabs) {
@@ -11,3 +12,4 @@ chrome.tabs.onUpdated.addListener(function() {
     });
   // };
 });
+}
